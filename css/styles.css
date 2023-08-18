@@ -29,13 +29,53 @@ h2 {
     text-align: center;
 }
 
-p {
+section p {
     text-align: center;
 }
 
+
+/*styling for the journey section */
+
+.job-entry {
+    display: flex;  
+    margin: 20px auto;
+    max-width: 700px;
+    border: 5px solid black;
+}
+
+.job-entry-left {
+    height: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+}
+
+.job-entry-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 150px;
+}
+
+.job-entry-right {
+    height: 100%;
+    width: 75%;
+    margin: 5px;
+    border: 3px solid black;
+}
+
+.job-entry-right p {
+    text-align: left;
+}
+
+
+
+
+
 /* Basic styling for the form */
 .contact-form {
-    max-width: 400px;
+    max-width: 700px;
     margin: 20px auto; /* Center-align the form horizontally */
     padding: 20px;
     border: 1px solid #ccc;
@@ -65,7 +105,7 @@ p {
 }
 
 .message-field {
-    width: 95%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
