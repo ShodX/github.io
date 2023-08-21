@@ -1,18 +1,24 @@
-/* Basic styling for the navigation bar */
+/* Basic styling for the page bar */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    height: 100vh;
     background-color: #f5f5f5;
 }
 
 nav {
+    position: sticky;
+    top: 0px;
     background-color: #222;
     color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    justify-content: ;
 }
 
 nav a {
@@ -40,15 +46,18 @@ section p {
     display: flex;  
     margin: 20px auto;
     max-width: 700px;
-    border: 5px solid black;
+    border: 5px solid black;  
+    background:rgba(255,255,255, 0.6);  
 }
 
 .job-entry-left {
     height: 100%;
     margin: 5px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     border: 3px solid black;
+    min-width: 100px;
 }
 
 .job-entry-left img {
@@ -63,14 +72,34 @@ section p {
     width: 75%;
     margin: 5px;
     border: 3px solid black;
+    min-width: 200px;
 }
 
 .job-entry-right p {
     text-align: left;
 }
 
+/*About me*/
 
+.about-me {
+    display: flex;  
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 700px;
+    border: 5px solid black; 
+    background:rgba(255,255,255, 0.6);  
+}
 
+/*Projects*/
+
+.projects {
+    display: flex;  
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 700px;
+    border: 5px solid black; 
+    background:rgba(255,255,255, 0.6);  
+}
 
 
 /* Basic styling for the form */
