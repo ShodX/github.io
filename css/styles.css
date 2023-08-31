@@ -1,4 +1,4 @@
-/* Basic styling for the page bar */
+/* Basic styling for the page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,20 +6,22 @@ body {
     background-color: #f5f5f5;
 }
 
-.top-image-block {
+.header-block {
+    display: inline-block;
+    margin: 0px;
     width: 100%;
     min-height: 50vh;
     background-image: url('../img/my-pic.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 15%;
-    display: flex;
-    align-items: center;
 }
 
-.top-image-block h1, h4{
+.header-inner-block {
+    margin: 8% 8%;
     color: #fff;
     font-family: sans-serif;
+    font-size: 35px;
 }
 
 nav {
@@ -31,6 +33,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    margin: 0px;
 }
 
 nav a {
