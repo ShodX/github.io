@@ -2,30 +2,36 @@
 body {
     background-color: #f5f5f5;
     font-family: Arial, sans-serif;
-    margin: 0;
+    max-width: 1920px;
+    margin: 0 auto;
     padding: 0;
+}
+
+html {
+    background-color: rgb(212, 204, 204);
 }
 
 /* HEADER */
 
 .header-block {
-    background-image: url('../img/my-pic.jpg');
+    background-color: #f5f5f5;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    display: inline-block;
-    margin: 0px;
-    min-height: 265px;
+    height: 265px;
     width: 100%;
 }
 
-.header-inner-block {
+.header-text {
     color: #fff;
+    display: inline-block;
     font-family: sans-serif;
-    margin: 12% 0 0 8%;
+    margin: 5vh 10vw;
+    max-height: 230px;
 }
 
-.header-inner-block h1, h4{
+.header-text h1, h4{
+    font-size: 7vw;
     margin: 0;
 }
 
@@ -61,23 +67,44 @@ section p {
 
 /* Responsive design for the header */
 /*  W   x-390:  nav bar is too big
-    W   720-x:  text is too small AND the picture is
-    H   x-500:  nav bar is too big  */
+    W   1200-x:  text is too small AND the picture is fucked
+    H   x-550:  nav bar is too big  */
 
-/* @media screen and (max-width:400px) {
-    .header-inner-block h1 {
-        font-size: medium;
+@media screen and (min-width: 690px) {
+    .header-block {
+        background-image: url('../img/my-pic-horizontal.jpg');
+    }
+}
+
+@media screen and (min-width: 1251px) {
+    .header-block {
+        min-height: 450px;
     }
 
-    .header-inner-block h4{
-        font-size: medium;
+    .header-text h1, h4 {
+        font-size: 87.5px;
     }
-} */
+}
+
+@media screen and (max-width: 689px) {
+    .header-block {
+        background-image: url('../img/my-pic.jpg');
+    }
+}
+
+@media screen and (max-width: 390px){
+    nav a {
+        font-size: 14px;
+        padding: 0;
+        text-align: center;
+    }
+}
 
 @media  screen and (max-height: 550px) {   
     nav a {
         font-size: 14px;
         padding: 0;
+        text-align: center;
     }
 }
 
