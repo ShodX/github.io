@@ -1,45 +1,50 @@
 /* Basic styling for the page */
 body {
+    background-color: #f5f5f5;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
 }
 
+/* HEADER */
+
 .header-block {
-    display: inline-block;
-    margin: 0px;
-    width: 100%;
-    min-height: 50vh;
     background-image: url('../img/my-pic.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 15%;
+    background-position: top;
+    display: inline-block;
+    margin: 0px;
+    min-height: 265px;
+    width: 100%;
 }
 
 .header-inner-block {
-    margin: 8% 8%;
     color: #fff;
     font-family: sans-serif;
-    font-size: 35px;
+    margin: 12% 0 0 8%;
+}
+
+.header-inner-block h1, h4{
+    margin: 0;
 }
 
 nav {
-    position: sticky;
-    top: 0px;
+    align-items: center;
     background-color: #222;
     color: #fff;
     display: flex;
+    position: sticky;
     justify-content: space-around;
-    align-items: center;
-    padding: 10px;
     margin: 0px;
+    padding: 10px;
+    top: 0px;
 }
 
 nav a {
     color: #fff;
-    text-decoration: none;
     padding: 10px;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -54,117 +59,149 @@ section p {
     text-align: center;
 }
 
+/* Responsive design for the header */
+/*  W   x-390:  nav bar is too big
+    W   720-x:  text is too small AND the picture is
+    H   x-500:  nav bar is too big  */
 
-/*styling for the journey section */
+/* @media screen and (max-width:400px) {
+    .header-inner-block h1 {
+        font-size: medium;
+    }
+
+    .header-inner-block h4{
+        font-size: medium;
+    }
+} */
+
+@media  screen and (max-height: 550px) {   
+    nav a {
+        font-size: 14px;
+        padding: 0;
+    }
+}
+
+
+
+/* CONTENT */
+/* Journey */
 
 .job-entry {
+    background:rgba(255,255,255, 0.6);  
+    border: 5px solid black;  
     display: flex;  
     margin: 20px auto;
     max-width: 700px;
-    border: 5px solid black;  
-    background:rgba(255,255,255, 0.6);  
 }
 
 .job-entry-left {
-    height: 100%;
-    margin: 5px;
-    padding: 10px;
+    border: 3px solid black;
     display: flex;
     flex-direction: column;
-    border: 3px solid black;
+    height: 100%;
+    margin: 5px;
     min-width: 100px;
+    padding: 10px;
 }
 
 .job-entry-left img {
-    width: 100%;
     height: 100%;
-    object-fit: contain;
     max-width: 150px;
+    object-fit: contain;
+    width: 100%;
 }
 
 .job-entry-right {
-    height: 100%;
-    width: 75%;
-    margin: 5px;
     border: 3px solid black;
+    height: 100%;
+    margin: 5px;
     min-width: 200px;
+    width: 75%;
 }
 
 .job-entry-right p {
     text-align: left;
 }
 
-/*About me*/
+/* About me */
 
 .about-me {
+    background:rgba(255,255,255, 0.6);  
+    border: 5px solid black; 
     display: flex;  
     justify-content: center;
     margin: 20px auto;
     max-width: 700px;
-    border: 5px solid black; 
-    background:rgba(255,255,255, 0.6);  
 }
 
-/*Projects*/
+/* Projects */
 
 .projects {
+    background:rgba(255,255,255, 0.6);  
+    border: 5px solid black; 
     display: flex;  
     justify-content: center;
     margin: 20px auto;
     max-width: 700px;
-    border: 5px solid black; 
-    background:rgba(255,255,255, 0.6);  
 }
 
 
-/* Basic styling for the form */
+/* Contact */
 .contact-form {
-    max-width: 700px;
-    margin: 20px auto; /* Center-align the form horizontally */
-    padding: 20px;
-    border: 1px solid #ccc;
+    align-items: center; /* Center the form elements horizontally */
     background-color: #f8f8f8;
+    border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the form elements horizontally */
+    margin: 20px auto; /* Center-align the form horizontally */
+    max-width: 700px;
+    padding: 20px;
 }
 
 .input-group {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .input-field {
-    flex: 1;
-    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    flex: 1;
+    padding: 10px;
 }
 
 .textarea-group {
-    width: 100%;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .message-field {
-    width: 100%;
-    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    padding: 10px;
+    width: 100%;
 }
 
 .submit-button {
     background-color: #555;
-    color: #fff;
     border: none;
-    padding: 10px 20px;
     border-radius: 4px;
+    color: #fff;
     cursor: pointer;
+    padding: 10px 20px;
     transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
     background-color: #777;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #555;
+    color: #fff;
+    height: 30px;
 }
