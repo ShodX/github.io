@@ -26,7 +26,7 @@ html {
     color: #fff;
     display: inline-block;
     font-family: sans-serif;
-    margin: 5vh 10vw;
+    margin: 35px 10vw;
     max-height: 230px;
 }
 
@@ -40,6 +40,7 @@ nav {
     background-color: #222;
     color: #fff;
     display: flex;
+    flex-wrap: wrap;
     position: sticky;
     justify-content: space-around;
     margin: 0px;
@@ -76,9 +77,13 @@ section p {
     }
 }
 
-@media screen and (min-width: 1251px) {
+@media screen and (min-width: 1200px) {
     .header-block {
-        min-height: 450px;
+        min-height: 400px;
+    }
+
+    .header-text {
+        margin: 80px 10vw;
     }
 
     .header-text h1, h4 {
